@@ -64,20 +64,35 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-.featured-images {
+.featured-images,
+.featured-accommodations {
     display: flex;
     justify-content: space-around;
     margin: 20px 0;
+    flex-wrap: wrap;
 }
 
-.featured-images .image-box {
+.featured-images .image-box,
+.featured-accommodations .accommodation-box {
     width: 22%;
+    text-align: center;
+    margin: 10px; /* Added margin for spacing between boxes */
+    box-sizing: border-box;
 }
 
-.featured-images .image-box img {
+.featured-images .image-box img,
+.featured-accommodations .accommodation-box img {
     width: 100%;
     height: auto;
+    max-width: 100%; /* Ensure image does not exceed the container width */
+    max-height: 300px;
     display: block;
+    object-fit: cover;
+}
+
+.accommodation-type {
+    margin-top: 10px;
+    font-weight: bold;
 }
 
 .content {
