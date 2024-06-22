@@ -1,3 +1,4 @@
+/* General styles for the website */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -40,6 +41,7 @@ nav ul li a:hover {
 }
 
 .hero {
+    position: relative;
     text-align: center;
     margin: 20px 0;
 }
@@ -48,6 +50,18 @@ nav ul li a:hover {
     width: 100%;
     max-height: 500px;
     object-fit: cover;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3em;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .featured-images {
@@ -97,3 +111,4 @@ footer .footer-links a {
 footer .footer-links a:hover {
     text-decoration: underline;
 }
+
